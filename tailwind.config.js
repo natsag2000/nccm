@@ -7,10 +7,10 @@
 module.exports = {
   theme: {
     extend: {
-        colors: {
-            'ccm-yellow': '#C61390',
-            'ccm-blue': '#10436D'
-        }
+      colors: {
+        'ccm-yellow': '#C61390',
+        'ccm-blue': '#10436D'
+      }
     }
   },
   variants: {},
