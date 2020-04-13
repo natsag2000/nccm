@@ -1,0 +1,166 @@
+{
+  "menu1": {
+    "title": "Бидний тухай",
+    "dropmenu": [
+      {
+        "title": "Бидний тухай",
+        "link": "pageHundetZovloh"
+      },
+      {
+        "title": "Хүндэт Зөвлөх",
+        "link": "pageHundetZovloh"
+      }
+    ]
+  },
+  "menu2": {
+    "title": "Хавдрын тухай",
+    "dropmenu": [
+      {
+        "title": "Хавдрын тухай",
+        "dropmenu": [
+          {
+            "title": "Хавдар гэж юу вэ?",
+            "link": "pageHundetZovloh"
+          },
+          {
+            "title": "Хавдар хэрхэн тархдаг вэ?",
+            "link": "pageHundetZovloh"
+          },
+          {
+            "title": "Эрт илрүүлэг",
+            "link": "pageHundetZovloh"
+          },
+          {
+            "title": "Анх удаа оношлогдохуй",
+            "link": "pageHundetZovloh"
+          }
+        ]
+      },
+      {
+        "title": "Хавдрын шалтгаан",
+        "dropmenu": [
+          {
+            "title": "Удамшлын",
+            "link": "pagenotready"
+          },
+          {
+            "title": "Хүрээлэн буй орчны",
+            "link": "pagenotready"
+          },
+          {
+            "title": "Амьдралын буруу хэв маяг",
+            "link": "pagenotready"
+          }
+        ]
+      },
+      {
+        "title": "Хавдрын төрөл",
+        "link": "pagenotready"
+      },
+      {
+        "title": "Хавдрын эмчилгээ",
+        "dropmenu": [
+          {
+            "title": "Химийн эмчилгээ",
+            "link": "pagenotready"
+          },
+          {
+            "title": "Туяа эмчилгээ",
+            "link": "pagenotready"
+          },
+          {
+            "title": "Мэс засал",
+            "link": "pagenotready"
+          },
+          {
+            "title": "Хооллолт",
+            "link": "pagenotready"
+          },
+          {
+            "title": "Сэтгэлзүйн тусламж",
+            "link": "pagenotready"
+          },
+          {
+            "title": "Гадаад эмнэлгүүдийн жагсаалт",
+            "link": "pagenotready"
+          },
+          {
+            "title": "Гадаад эмчилгээний зардал",
+            "link": "pagenotready"
+          }
+        ]
+      }
+    ]
+  },
+  "menu3": {
+    "title": "Урьдчилан Сэргийлэх",
+    "dropmenu": [
+      {
+        "title": "Урьдчилан сэргийлэх үзлэг",
+        "link": "page1"
+      },
+      {
+        "title": "Хооллолт",
+        "link": "page1"
+      },
+      {
+        "title": "Архи",
+        "link": "page1"
+      },
+      {
+        "title": "Тамхи",
+        "link": "page1"
+      },
+      {
+        "title": "Хавдар үүсгэгч бодис",
+        "link": "page1"
+      },
+      {
+        "title": "Хөдөлгөөн",
+        "link": "page1"
+      },
+      {
+        "title": "Эрсдлийг бууруулах",
+        "link": "page1"
+      }
+    ]
+  },
+  "menu4": {
+    "title": "Дэмжлэг үзүүлэх",
+    "dropmenu": [
+      {
+        "title": "Гэр бүл асран хамгаалагч",
+        "dropmenu": [
+          {
+            "title": "Өвчтөний асаргаа сувилгаа",
+            "link": "pageAsargaa"
+          },
+          {
+            "title": "Хүүхдийн асаргаа сувилгаа",
+            "link": "pageChild"
+          },
+          {
+            "title": "Сэтгэлзүйн дэмжлэг",
+            "link": "pagehelp"
+          }
+        ]
+      },
+      {
+        "title": "Ажил олгогч нарт",
+        "link": "pagetest"
+      },
+      {
+        "title": "Өөрийн түүхээс хуваалцахуй",
+        "link": "pagetest"
+      }
+    ]
+  },
+  "menu5": {
+    "title": "Сайн&nbsp;дурын ажилтан",
+    "link": "page1"
+  },
+  "menu6": {
+    "title": "Хандив Donor",
+    "link": "page1"
+  }
+}

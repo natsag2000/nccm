@@ -13,6 +13,8 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  variants: {
+    pointerEvents: ['responsive', 'hover', 'focus']
+  },
   plugins: []
 }
