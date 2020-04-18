@@ -8,7 +8,8 @@
         </div>
         <div class="block md:hidden">
           <button @click="toggleMobileMenu()" class="flex items-center px-3 py-2 border text-ccm-blue border-ccm-blue rounded">
-            <svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
+            <svg v-if="showMobileMenu" class="h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
+            <svg v-else class="h-3 w-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
           </button>
         </div>
         <div class="absolute inset-0 min-h-screen min-w-screen bg-ccm-yellow hidden flex flex-col">
