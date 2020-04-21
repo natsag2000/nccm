@@ -5,7 +5,10 @@
       <div @click="toggleSubMenu" class="flex p-2">
         <svg v-if="showSubMenu === true" class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
         <svg v-else class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" /></svg>
-        <div v-html="mcMenu.title" class="ml-1 " />
+        <a v-if="mcMenu.dropmenu === undefined" :href="mcMenu.link">
+          <div v-html="mcMenu.title" class="ml-1" />
+        </a>
+        <div v-else v-html="mcMenu.title" class="ml-1 " />
       </div>
       <ul :class="showSubMenu ? '' : 'hidden'" class="flex flex-col w-auto text-md opacity-75 whitespace-no-wrap">
         <li
@@ -35,7 +38,7 @@
 
     <!-- desktop -->
     <div v-else class="h-full w-full dropdown relative inline-block">
-      <a v-if="mcMenu.dropmenu === undefined" href="mcMenu.link" class="h-full flex hover:bg-ccm-blue focus:bg-ccm-blue justify-center items-center cursor-pointer pointer-events-auto">
+      <a v-if="mcMenu.dropmenu === undefined" :href="mcMenu.link" class="h-full flex hover:bg-ccm-blue focus:bg-ccm-blue justify-center items-center cursor-pointer pointer-events-auto">
         <div v-html="mcMenu.title" class="w-24 text-center" />
       </a>
       <div v-else @click.prevent="toggleSubMenu" :class="holdhover ? 'bg-ccm-blue' : ''" class="h-full flex hover:bg-ccm-blue focus:bg-ccm-blue justify-center items-center cursor-pointer pointer-events-auto">

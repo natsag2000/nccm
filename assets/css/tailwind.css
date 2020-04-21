@@ -1,5 +1,22 @@
 /* purgecss start ignore */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@tailwind base;
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+p {
+  @apply py-2
+}
+
+@tailwind components;
 /* purgecss end ignore */
-@import 'tailwindcss/utilities';
+
+@tailwind utilities;

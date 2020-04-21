@@ -4,7 +4,7 @@
     "dropmenu": [
       {
         "title": "Бидний тухай",
-        "link": "pageHundetZovloh"
+        "link": "aboutUs"
       },
       {
         "title": "Хүндэт Зөвлөх",
@@ -161,6 +161,6 @@
   },
   "menu6": {
     "title": "Хандив Donor",
-    "link": "page1"
+    "link": "donor"
   }
 }
