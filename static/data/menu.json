@@ -20,19 +20,19 @@
         "dropmenu": [
           {
             "title": "Хавдар гэж юу вэ?",
-            "link": "pageHundetZovloh"
+            "link": "havdar-gej-yu-ve"
           },
           {
             "title": "Хавдар хэрхэн тархдаг вэ?",
-            "link": "pageHundetZovloh"
+            "link": "pagenotready"
           },
           {
             "title": "Эрт илрүүлэг",
-            "link": "pageHundetZovloh"
+            "link": "pagenotready"
           },
           {
             "title": "Анх удаа оношлогдохуй",
-            "link": "pageHundetZovloh"
+            "link": "pagenotready"
           }
         ]
       },
@@ -97,31 +97,31 @@
     "dropmenu": [
       {
         "title": "Урьдчилан сэргийлэх үзлэг",
-        "link": "page1"
+        "link": "sergiileh-uzleg"
       },
       {
         "title": "Хооллолт",
-        "link": "page1"
+        "link": "pagenotready"
       },
       {
         "title": "Архи",
-        "link": "page1"
+        "link": "pagenotready"
       },
       {
         "title": "Тамхи",
-        "link": "page1"
+        "link": "pagenotready"
       },
       {
         "title": "Хавдар үүсгэгч бодис",
-        "link": "page1"
+        "link": "pagenotready"
       },
       {
         "title": "Хөдөлгөөн",
-        "link": "page1"
+        "link": "pagenotready"
       },
       {
         "title": "Эрсдлийг бууруулах",
-        "link": "page1"
+        "link": "pagenotready"
       }
     ]
   },
@@ -133,31 +133,31 @@
         "dropmenu": [
           {
             "title": "Өвчтөний асаргаа сувилгаа",
-            "link": "pageAsargaa"
+            "link": "pagenotready"
           },
           {
             "title": "Хүүхдийн асаргаа сувилгаа",
-            "link": "pageChild"
+            "link": "pagenotready"
           },
           {
             "title": "Сэтгэлзүйн дэмжлэг",
-            "link": "pagehelp"
+            "link": "pagenotready"
           }
         ]
       },
       {
         "title": "Ажил олгогч нарт",
-        "link": "pagetest"
+        "link": "pagenotready"
       },
       {
         "title": "Өөрийн түүхээс хуваалцахуй",
-        "link": "pagetest"
+        "link": "pagenotready"
       }
     ]
   },
   "menu5": {
     "title": "Сайн&nbsp;дурын ажилтан",
-    "link": "page1"
+    "link": "pagenotready"
   },
   "menu6": {
     "title": "Хандив Donor",
