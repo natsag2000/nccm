@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col mx-auto">
+  <div class="container">
     <div v-html="aboutUs" class="mx-4" />
     <div v-html="startpage" class="mx-4" />
   </div>
@@ -22,7 +22,7 @@ export default {
 
 <style>
 .container {
-  @apply min-h-screen flex mx-auto;
+  @apply min-h-screen flex flex-col mx-auto;
 }
 
 </style>
