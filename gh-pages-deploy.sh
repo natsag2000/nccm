@@ -1,5 +1,5 @@
 #!/bin/bash
-directory=dist
+directory=_site
 branch=gh-pages
 build_command() {
   yarn generate

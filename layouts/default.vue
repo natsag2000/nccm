@@ -2,10 +2,10 @@
   <div class="flex flex-col">
     <nav class="flex justify-center ">
       <div class="flex flex-grow items-center justify-between flex-no-wrap p-1 max-w-screen-xl relative">
-        <a href="/">
+        <a href="index">
           <div class="flex items-center flex-shrink-0">
-            <img class="hidden md:block" src="/logo_350_100.png"></img>
-            <img class="w-64 md:hidden" src="/logo_350_100.png"></img>
+            <img class="hidden md:block" src="~/static/logo_350_100.png"></img>
+            <img class="w-64 md:hidden" src="~/static/logo_350_100.png"></img>
           </div>
         </a>
         <div class="text-ccm-yellow flex absolute bottom-0 right-0 -mb-2 mr-10 md:hidden">
