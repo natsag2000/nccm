@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <nav class="flex justify-center ">
       <div class="flex flex-grow items-center justify-between flex-no-wrap p-1 max-w-screen-xl relative">
-        <a href="index">
+        <a href="~/">
           <div class="flex items-center flex-shrink-0">
             <img class="hidden md:block" src="~/static/logo_350_100.png"></img>
             <img class="w-64 md:hidden" src="~/static/logo_350_100.png"></img>
