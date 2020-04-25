@@ -2,12 +2,12 @@
   <div class="flex flex-col">
     <nav class="flex justify-center ">
       <div class="flex flex-grow items-center justify-between flex-no-wrap p-1 max-w-screen-xl relative">
-        <a href="~/">
+        <nuxt-link to="/">
           <div class="flex items-center flex-shrink-0">
             <img class="hidden md:block" src="~/static/logo_350_100.png"></img>
             <img class="w-64 md:hidden" src="~/static/logo_350_100.png"></img>
           </div>
-        </a>
+        </nuxt-link>
         <div class="text-ccm-yellow flex absolute bottom-0 right-0 -mb-2 mr-10 md:hidden">
           <a href="https://www.facebook.com/people/%D0%A5%D0%B0%D0%B2%D0%B4%D1%80%D1%8B%D0%BD-%D2%AE%D0%BD%D0%B4%D1%8D%D1%81%D0%BD%D0%B8%D0%B9-%D0%97%D3%A9%D0%B2%D0%BB%D3%A9%D0%BB/100008502519081" target="_blank">
             <svg class="w-10 h-10 mr-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm2.274 6.634h-1.443c-.171 0-.361.225-.361.524V8.6h1.805l-.273 1.486H10.47v4.461H8.767v-4.461H7.222V8.6h1.545v-.874c0-1.254.87-2.273 2.064-2.273h1.443v1.581z" /></svg>
