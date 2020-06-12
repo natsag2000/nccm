@@ -24,11 +24,11 @@
           },
           {
             "title": "Хавдар хэрхэн тархдаг вэ?",
-            "link": "pagenotready"
+            "link": "havdar-herhen-tarhdag-ve"
           },
           {
             "title": "Эрт илрүүлэг",
-            "link": "pagenotready"
+            "link": "ertilruuleg"
           },
           {
             "title": "Анх удаа оношлогдохуй",
@@ -41,15 +41,15 @@
         "dropmenu": [
           {
             "title": "Удамшлын",
-            "link": "pagenotready"
+            "link": "udamshliin"
           },
           {
             "title": "Хүрээлэн буй орчны",
-            "link": "pagenotready"
+            "link": "hureelenbuiorchin"
           },
           {
             "title": "Амьдралын буруу хэв маяг",
-            "link": "pagenotready"
+            "link": "amidraliin-buruu-hev-maygiin-shaltgaan"
           }
         ]
       },
@@ -62,23 +62,23 @@
         "dropmenu": [
           {
             "title": "Химийн эмчилгээ",
-            "link": "pagenotready"
+            "link": "himi-emchilgee"
           },
           {
             "title": "Туяа эмчилгээ",
-            "link": "pagenotready"
+            "link": "tuya-emchilgee"
           },
           {
             "title": "Мэс засал",
-            "link": "pagenotready"
+            "link": "mes-zasal"
           },
           {
             "title": "Хооллолт",
-            "link": "pagenotready"
+            "link": "hoollolt"
           },
           {
             "title": "Сэтгэлзүйн тусламж",
-            "link": "pagenotready"
+            "link": "setgelzuin-tuslamj"
           },
           {
             "title": "Гадаад эмнэлгүүдийн жагсаалт",
@@ -101,15 +101,15 @@
       },
       {
         "title": "Хооллолт",
-        "link": "pagenotready"
+        "link": "hoollolt"
       },
       {
         "title": "Архи",
-        "link": "pagenotready"
+        "link": "arhi"
       },
       {
         "title": "Тамхи",
-        "link": "pagenotready"
+        "link": "tamhi"
       },
       {
         "title": "Хавдар үүсгэгч бодис",
@@ -117,11 +117,11 @@
       },
       {
         "title": "Хөдөлгөөн",
-        "link": "pagenotready"
+        "link": "hudulguun"
       },
       {
         "title": "Эрсдлийг бууруулах",
-        "link": "pagenotready"
+        "link": "ersdliig-buuruulah"
       }
     ]
   },
@@ -137,27 +137,27 @@
           },
           {
             "title": "Хүүхдийн асаргаа сувилгаа",
-            "link": "pagenotready"
+            "link": "huuhdiin-asargaa-suvilgaa"
           },
           {
             "title": "Сэтгэлзүйн дэмжлэг",
-            "link": "pagenotready"
+            "link": "setgelzuin-demjleg"
           }
         ]
       },
       {
         "title": "Ажил олгогч нарт",
-        "link": "pagenotready"
+        "link": "ajil-olgogch-nart"
       },
       {
         "title": "Өөрийн түүхээс хуваалцахуй",
-        "link": "pagenotready"
+        "link": "uuriin-tuuhees-huvaaltsahui"
       }
     ]
   },
   "menu5": {
     "title": "Сайн&nbsp;дурын ажилтан",
-    "link": "pagenotready"
+    "link": "sain-duriin-ajiltan"
   },
   "menu6": {
     "title": "Хандив Donor",
