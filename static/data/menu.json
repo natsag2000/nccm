@@ -25,14 +25,6 @@
           {
             "title": "Хавдар хэрхэн тархдаг вэ?",
             "link": "havdar-herhen-tarhdag-ve"
-          },
-          {
-            "title": "Эрт илрүүлэг",
-            "link": "ertilruuleg"
-          },
-          {
-            "title": "Анх удаа оношлогдохуй",
-            "link": "pagenotready"
           }
         ]
       },
@@ -40,16 +32,24 @@
         "title": "Хавдрын шалтгаан",
         "dropmenu": [
           {
-            "title": "Удамшлын",
+            "title": "Тамхи",
+            "link": "tamhi"
+          },
+          {
+            "title": "Хоол хүнс ба дасгал хөдөлгөөн",
+            "link": "hool-ba-hodolgoon"
+          },
+          {
+            "title": "Халдварууд",
+            "link": "haldvaruud"
+          },
+          {
+            "title": "Удамшил",
             "link": "udamshliin"
           },
           {
-            "title": "Хүрээлэн буй орчны",
-            "link": "hureelenbuiorchin"
-          },
-          {
-            "title": "Амьдралын буруу хэв маяг",
-            "link": "amidraliin-buruu-hev-maygiin-shaltgaan"
+            "title": "Хавдар үүсгэгч бодисууд",
+            "link": "havdar-uusgegch-bodisuud"
           }
         ]
       },
@@ -81,14 +81,22 @@
             "link": "setgelzuin-tuslamj"
           },
           {
-            "title": "Гадаад эмнэлгүүдийн жагсаалт",
-            "link": "pagenotready"
+            "title": "Гадаад эмчилгээ",
+            "link": "gadaad-emchilgee"
           },
           {
-            "title": "Гадаад эмчилгээний зардал",
-            "link": "pagenotready"
+            "title": "Хөнгөвчлөх тусламж үйлчилгээ",
+            "link": "hongovchloh-tuslamj"
           }
         ]
+      },
+      {
+        "title": "Эрт илрүүлэг",
+        "link": "ertilruuleg"
+      },
+      {
+        "title": "Анх удаа оношлогдохуй",
+        "link": "pagenotready"
       }
     ]
   },
@@ -106,10 +114,6 @@
       {
         "title": "Архи",
         "link": "arhi"
-      },
-      {
-        "title": "Тамхи",
-        "link": "tamhi"
       },
       {
         "title": "Хавдар үүсгэгч бодис",

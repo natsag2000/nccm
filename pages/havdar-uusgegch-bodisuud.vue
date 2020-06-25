@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import mdContent from '~/static/content/tamhi.md'
+import mdContent from '~/static/content/havdar-uusgegch-bodisuud.md'
 export default {
   computed: {
     pageContent () {
@@ -19,9 +19,9 @@ export default {
   .container {
     @apply min-h-screen flex flex-col mx-auto;
   }
-
   .page ul {
     list-style-type: circle;
     list-style-position: inside;
   }
+
 </style>

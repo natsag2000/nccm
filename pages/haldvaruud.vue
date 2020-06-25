@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import mdContent from '~/static/content/tamhi.md'
+import mdContent from '~/static/content/haldvaruud.md'
 export default {
   computed: {
     pageContent () {

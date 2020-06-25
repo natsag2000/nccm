@@ -57,7 +57,13 @@ export default {
   ** Markdownit
   */
   markdownit: {
-    injected: true
+    injected: true,
+    breaks: true,
+    linkify: true,
+    use: [
+      'markdown-it-div',
+      'markdown-it-attrs'
+    ]
   },
   /*
   ** Build configuration
