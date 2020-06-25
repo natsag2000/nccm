@@ -17,6 +17,7 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-div": "^1.1.0",
+    "markdown-it-wiki-toc": "^1.0.4",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
