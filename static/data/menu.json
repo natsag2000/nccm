@@ -121,29 +121,20 @@
     "title": "Ном хэвлэл",
     "dropmenu": [
       {
-        "title": "Гэр бүл асран хамгаалагч",
-        "dropmenu": [
-          {
-            "title": "Өвчтөний асаргаа сувилгаа",
-            "link": "pagenotready"
-          },
-          {
-            "title": "Хүүхдийн асаргаа сувилгаа",
-            "link": "huuhdiin-asargaa-suvilgaa"
-          },
-          {
-            "title": "Сэтгэлзүйн дэмжлэг",
-            "link": "setgelzuin-demjleg"
-          }
-        ]
+        "title": "Электрон ном, гарын авлага",
+        "link": "online-books"
       },
       {
-        "title": "Ажил олгогч нарт",
-        "link": "ajil-olgogch-nart"
+        "title": "Тайлангууд",
+        "link": "tailanguud"
       },
       {
-        "title": "Өөрийн түүхээс хуваалцахуй",
-        "link": "uuriin-tuuhees-huvaaltsahui"
+        "title": "Шинэ гарсан нийтлэл",
+        "link": "shine-garsan-niitlel"
+      },
+      {
+        "title": "Хэрэгтэй холбоос",
+        "link": "links"
       }
     ]
   },
