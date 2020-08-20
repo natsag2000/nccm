@@ -35,6 +35,50 @@
         </div>
       </a>
     </div>
+    <p class="text-lg mt-4">
+      Гарын авлага, танилцуулгууд
+    </p>
+    <div class="flex space-x-8">
+      <a href="gariin-avlaga/Breast-cancer-exercise.pdf" target="_blank">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/dasgal1.png">
+        </div>
+      </a>
+      <a href="gariin-avlaga/BreastDasgal.pdf" target="_blank">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/dasgal2.png">
+        </div>
+      </a>
+      <a href="gariin-avlaga/HPV_vaccine.pdf" target="_blank">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/vaccine1.png">
+        </div>
+      </a>
+      <a href="gariin-avlaga/HPV_vaccine_sudalgaa.jpg" target="_blank">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/sudalgaa1.png">
+        </div>
+      </a>
+      <a href="gariin-avlaga/HPV_vaccine_sudalgaa_2.jpg" target="_blank">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/sudalgaa2.png">
+        </div>
+      </a>
+    </div>
+    <div class="flex space-x-8 mt-8">
+      <a href="gariin-avlaga/Huuhdiin_havdar_1.jpg" target="_blank">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/huuhed_havdar1.png">
+        </div>
+      </a>
+      <a href="gariin-avlaga/Huuhdiin_havdar_2.jpg" target="_blank">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/huuhed_havdar2.png">
+        </div>
+      </a>
+
+    </div>
+
   </div>
 </template>
 
