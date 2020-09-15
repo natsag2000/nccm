@@ -76,9 +76,7 @@
           <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/huuhed_havdar2.png">
         </div>
       </a>
-
     </div>
-
   </div>
 </template>
 

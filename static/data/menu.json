@@ -1,19 +1,31 @@
 {
   "menu1": {
-    "title": "Бидний тухай",
+    "title": "Бидний<br/>тухай",
     "dropmenu": [
       {
         "title": "Бидний тухай",
         "link": "aboutUs"
       },
       {
+        "title": "Гүйцэтгэх захирлын мэндчилгээ",
+        "link": "ceo"
+      },
+      {
         "title": "Хүндэт Зөвлөх",
         "link": "pageHundetZovloh"
+      },
+      {
+        "title": "Удирдах зөвлөлийн гишүүд",
+        "link": "udirdah-zovlol"
+      },
+      {
+        "title": "Зургийн галерей",
+        "link": "gallery"
       }
     ]
   },
   "menu2": {
-    "title": "Хавдрын тухай",
+    "title": "Хавдрын<br/>тухай",
     "dropmenu": [
       {
         "title": "Хавдрын тухай",
@@ -91,34 +103,30 @@
         ]
       },
       {
-        "title": "Эрт илрүүлэг",
+        "title": "Хавдрын эрт илрүүлэг",
         "link": "ertilruuleg"
       },
       {
         "title": "Анх удаа оношлогдохуй",
-        "link": "pagenotready"
+        "link": "anh-udaa"
       }
     ]
   },
   "menu3": {
-    "title": "Урьдчилан Сэргийлэх",
+    "title": "Урьдчилан<br/>Сэргийлэх",
     "dropmenu": [
       {
         "title": "Урьдчилан сэргийлэх үзлэг",
         "link": "sergiileh-uzleg"
       },
       {
-        "title": "Архи",
-        "link": "arhi"
-      },
-      {
-        "title": "Эрсдлийг бууруулах",
+        "title": "Хавдрын эрсдлийг бууруулах",
         "link": "ersdliig-buuruulah"
       }
     ]
   },
   "menu4": {
-    "title": "Ном хэвлэл",
+    "title": "Ном<br/>хэвлэл",
     "dropmenu": [
       {
         "title": "Электрон ном, гарын авлага",
@@ -139,11 +147,33 @@
     ]
   },
   "menu5": {
-    "title": "Сайн&nbsp;дурын ажилтан",
+    "title": "Сайн&nbsp;дурын<br/>ажилтан",
     "link": "sain-duriin-ajiltan"
   },
   "menu6": {
-    "title": "Хандив Donor",
+    "title": "Хандив<br/>Donor",
     "link": "donor"
+  },
+  "menu7": {
+    "title": "Дэмжлэг<br/>үзүүлэх",
+    "dropmenu": [
+      {
+        "title": "Өвчтөн байрлуулах төв",
+        "link": "ovchton-bairluulah"
+      },
+      {
+        "title": "Тээврийн хөтөлбөр",
+        "link": "teever-hotolbor"
+      },
+      {
+        "title": "Урлагийн сэтгэл заслын хөтөлбөр",
+        "link": "urlag-hotolbor"
+      },
+      {
+        "title": "Бясалгалын хөтөлбөр",
+        "link": "meditation-hotolbor"
+      }
+    ]
   }
+
 }

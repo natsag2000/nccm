@@ -39,10 +39,10 @@
     <!-- desktop -->
     <div v-else class="h-full w-full dropdown relative inline-block">
       <a v-if="mcMenu.dropmenu === undefined" :href="mcMenu.link" class="h-full flex hover:bg-ccm-blue focus:bg-ccm-blue justify-center items-center cursor-pointer pointer-events-auto">
-        <div v-html="mcMenu.title" class="w-24 text-center" />
+        <div v-html="mcMenu.title" class="mx-2 text-center" />
       </a>
       <div v-else @click.prevent="toggleSubMenu" :class="holdhover ? 'bg-ccm-blue' : ''" class="h-full flex hover:bg-ccm-blue focus:bg-ccm-blue justify-center items-center cursor-pointer pointer-events-auto">
-        <div v-html="mcMenu.title" class="w-24 text-center" />
+        <div v-html="mcMenu.title" class="mx-2 text-center" />
       </div>
       <ul class="dropdown-content absolute left-0 hidden text-md whitespace-no-wrap rounded-b-lg overflow-hidden cursor-pointer">
         <li

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container page">
     <div v-html="pageContent" class="mx-4" />
   </div>
 </template>
@@ -19,5 +19,8 @@ export default {
   .container {
     @apply min-h-screen flex flex-col mx-auto;
   }
-
+  .page ul {
+    list-style-type: circle;
+    list-style-position: inside;
+  }
 </style>
