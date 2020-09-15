@@ -79,8 +79,5 @@ export default {
   },
   generate: {
     subFolders: false
-  },
-  router: {
-    base: '/nccm/'
   }
 }
