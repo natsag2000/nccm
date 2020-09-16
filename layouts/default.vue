@@ -66,16 +66,18 @@
     </nav>
     <nav :class="showMobileMenu == true ? '' : 'hidden'" class="flex bg-ccm-yellow md:hidden">
       <div class="flex flex-col w-screen font-sans text-xl tracking-normal leading-none text-white">
-        <DropdownMenu :mc-menu="menu.menu1" :mc-mobile="true" mc-width="w-auto" />
-        <DropdownMenu :mc-menu="menu.menu2" :mc-mobile="true" mc-width="w-auto" />
-        <DropdownMenu :mc-menu="menu.menu3" :mc-mobile="true" mc-width="w-auto" />
-        <DropdownMenu :mc-menu="menu.menu4" :mc-mobile="true" mc-width="w-auto" />
-        <DropdownMenu :mc-menu="menu.menu5" :mc-mobile="true" mc-width="w-auto" />
-        <DropdownMenu :mc-menu="menu.menu6" :mc-mobile="true" mc-width="w-auto" />
-        <DropdownMenu :mc-menu="menu.menu7" :mc-mobile="true" mc-width="w-auto" />
+        <DropdownMenu :mc-menu="menu.menu1" :mc-mobile="true" mc-width="w-auto" :onmc ="toggleMobileMenu" />
+        <DropdownMenu :mc-menu="menu.menu2" :mc-mobile="true" mc-width="w-auto" :onmc ="toggleMobileMenu"/>
+        <DropdownMenu :mc-menu="menu.menu3" :mc-mobile="true" mc-width="w-auto" :onmc ="toggleMobileMenu"/>
+        <DropdownMenu :mc-menu="menu.menu4" :mc-mobile="true" mc-width="w-auto" :onmc ="toggleMobileMenu"/>
+        <DropdownMenu :mc-menu="menu.menu5" :mc-mobile="true" mc-width="w-auto" :onmc ="toggleMobileMenu"/>
+        <DropdownMenu :mc-menu="menu.menu6" :mc-mobile="true" mc-width="w-auto" :onmc ="toggleMobileMenu"/>
+        <DropdownMenu :mc-menu="menu.menu7" :mc-mobile="true" mc-width="w-auto" :onmc ="toggleMobileMenu"/>
         <div class="flex p-2">
           <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" /></svg>
-          <a class="ml-1" href="contact">Холбогдох</a>
+          <div @click="toggleMobileMenu">
+            <nuxt-link class="ml-1" to="/contact">Холбогдох</nuxt-link>
+          </div>
         </div>
       </div>
     </nav>
@@ -96,9 +98,13 @@ export default {
       menu
     }
   },
+  beforeRouteLeave (to, from, next) {
+    console.log('Route leaving')
+  },
   methods: {
     toggleMobileMenu (e) {
       this.showMobileMenu = !this.showMobileMenu
+      console.log('toggle')
     }
   }
 }

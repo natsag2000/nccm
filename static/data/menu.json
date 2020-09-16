@@ -4,23 +4,23 @@
     "dropmenu": [
       {
         "title": "Бидний тухай",
-        "link": "aboutUs"
+        "link": "/aboutUs"
       },
       {
         "title": "Гүйцэтгэх захирлын мэндчилгээ",
-        "link": "ceo"
+        "link": "/ceo"
       },
       {
         "title": "Хүндэт Зөвлөх",
-        "link": "pageHundetZovloh"
+        "link": "/pageHundetZovloh"
       },
       {
         "title": "Удирдах зөвлөлийн гишүүд",
-        "link": "udirdah-zovlol"
+        "link": "/udirdah-zovlol"
       },
       {
         "title": "Зургийн галерей",
-        "link": "gallery"
+        "link": "/zurag"
       }
     ]
   },
@@ -32,11 +32,11 @@
         "dropmenu": [
           {
             "title": "Хавдар гэж юу вэ?",
-            "link": "havdar-gej-yu-ve"
+            "link": "/havdar-gej-yu-ve"
           },
           {
             "title": "Хавдар хэрхэн тархдаг вэ?",
-            "link": "havdar-herhen-tarhdag-ve"
+            "link": "/havdar-herhen-tarhdag-ve"
           }
         ]
       },
@@ -45,70 +45,70 @@
         "dropmenu": [
           {
             "title": "Тамхи",
-            "link": "tamhi"
+            "link": "/tamhi"
           },
           {
             "title": "Хоол хүнс ба дасгал хөдөлгөөн",
-            "link": "hool-ba-hodolgoon"
+            "link": "/hool-ba-hodolgoon"
           },
           {
             "title": "Халдварууд",
-            "link": "haldvaruud"
+            "link": "/haldvaruud"
           },
           {
             "title": "Удамшил",
-            "link": "udamshliin"
+            "link": "/udamshliin"
           },
           {
             "title": "Хавдар үүсгэгч бодисууд",
-            "link": "havdar-uusgegch-bodisuud"
+            "link": "/havdar-uusgegch-bodisuud"
           }
         ]
       },
       {
         "title": "Хавдрын төрөл",
-        "link": "havdriin-turul"
+        "link": "/havdriin-turul"
       },
       {
         "title": "Хавдрын эмчилгээ",
         "dropmenu": [
           {
             "title": "Химийн эмчилгээ",
-            "link": "himi-emchilgee"
+            "link": "/himi-emchilgee"
           },
           {
             "title": "Туяа эмчилгээ",
-            "link": "tuya-emchilgee"
+            "link": "/tuya-emchilgee"
           },
           {
             "title": "Мэс засал",
-            "link": "mes-zasal"
+            "link": "/mes-zasal"
           },
           {
             "title": "Хооллолт",
-            "link": "hoollolt"
+            "link": "/hoollolt"
           },
           {
             "title": "Сэтгэлзүйн тусламж",
-            "link": "setgelzuin-tuslamj"
+            "link": "/setgelzuin-tuslamj"
           },
           {
             "title": "Гадаад эмчилгээ",
-            "link": "gadaad-emchilgee"
+            "link": "/gadaad-emchilgee"
           },
           {
             "title": "Хөнгөвчлөх тусламж үйлчилгээ",
-            "link": "hongovchloh-tuslamj"
+            "link": "/hongovchloh-tuslamj"
           }
         ]
       },
       {
         "title": "Хавдрын эрт илрүүлэг",
-        "link": "ertilruuleg"
+        "link": "/ertilruuleg"
       },
       {
         "title": "Анх удаа оношлогдохуй",
-        "link": "anh-udaa"
+        "link": "/anh-udaa"
       }
     ]
   },
@@ -117,11 +117,11 @@
     "dropmenu": [
       {
         "title": "Урьдчилан сэргийлэх үзлэг",
-        "link": "sergiileh-uzleg"
+        "link": "/sergiileh-uzleg"
       },
       {
         "title": "Хавдрын эрсдлийг бууруулах",
-        "link": "ersdliig-buuruulah"
+        "link": "/ersdliig-buuruulah"
       }
     ]
   },
@@ -130,48 +130,48 @@
     "dropmenu": [
       {
         "title": "Электрон ном, гарын авлага",
-        "link": "online-books"
+        "link": "/online-books"
       },
       {
         "title": "Тайлангууд",
-        "link": "tailanguud"
+        "link": "/tailanguud"
       },
       {
         "title": "Шинэ гарсан нийтлэл",
-        "link": "shine-garsan-niitlel"
+        "link": "/shine-garsan-niitlel"
       },
       {
         "title": "Хэрэгтэй холбоос",
-        "link": "links"
+        "link": "/links"
       }
     ]
   },
   "menu5": {
     "title": "Сайн&nbsp;дурын<br/>ажилтан",
-    "link": "sain-duriin-ajiltan"
+    "link": "/sain-duriin-ajiltan"
   },
   "menu6": {
     "title": "Хандив<br/>Donor",
-    "link": "donor"
+    "link": "/donor"
   },
   "menu7": {
     "title": "Дэмжлэг<br/>үзүүлэх",
     "dropmenu": [
       {
         "title": "Өвчтөн байрлуулах төв",
-        "link": "ovchton-bairluulah"
+        "link": "/ovchton-bairluulah"
       },
       {
         "title": "Тээврийн хөтөлбөр",
-        "link": "teever-hotolbor"
+        "link": "/teever-hotolbor"
       },
       {
         "title": "Урлагийн сэтгэл заслын хөтөлбөр",
-        "link": "urlag-hotolbor"
+        "link": "/urlag-hotolbor"
       },
       {
         "title": "Бясалгалын хөтөлбөр",
-        "link": "meditation-hotolbor"
+        "link": "/meditation-hotolbor"
       }
     ]
   }

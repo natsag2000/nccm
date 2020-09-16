@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'spa',
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -28,8 +28,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/vue-gallery.client.js',
-    '~plugins/vue-lazyload.js'
+    { src: '~/plugins/vue-gallery.client.js', ssr: true }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -76,8 +75,5 @@ export default {
     */
     extend (config, ctx) {
     }
-  },
-  generate: {
-    subFolders: false
   }
 }
