@@ -1,43 +1,6 @@
 <template>
   <div class="container">
     <div v-html="aboutUs" class="mx-4" />
-    <!-- Projects -->
-    <div class="flex-col mt-4">
-      <span class="text-3xl mb-2">Бидний төслүүд</span>
-      <div class="sm:flex sm:space-x-4">
-        <Project
-          title="Хавдартай өвчтөнүүдэд зориулсан байр байгуулах төсөл"
-          image="projects/project1.jpg"
-          content="Энэхүү төслийн зорилго нь хөдөө орон нутгийн хавдартай өвчтөнүүдийг нийслэл хотод эмчилгээ хийлгэх хугацаанд нь тохь тухтай байранд байрлуулах, өвчтөнүүдэд тусламж дэмжлэг үзүүлэх, өвчнөө даван туулах итгэл найдвар өгөхөд оршино.
-          "
-          link="project1"
-        />
-        <Project
-          title="Залуу эмэгтэйчүүдийн дундах хүний хөхөнцөр вирүсийн тархалт болон мэдлэг, дадал, хандлагыг үнэлэх судалгаа"
-          image="projects/project2.jpg"
-          content="Умайн хүзүүний хорт хавдар нь Монгол улсад эмэгтэйчүүдэд түгээмэл тохиолддог хорт хавдрын хоёрдугаарт ордог. Умайн хүзүүний хорт хавдрын зонхилон тохиолддог шалтгаан нь хүний хөхөнцөр вирүс (ХХВ) юм"
-          link="project2"
-        />
-      </div>
-      <div class="sm:flex sm:space-x-4 mt-4">
-        <Project
-          title="Тээврийн хөтөлбөр"
-          image="projects/project3.png"
-          content="Хөдөө орон нутгаас нийслэл хотод эмчилгээнд ирдэг хавдартай өвчтөнүүдэд дэмжлэг үзүүлэх тээврийн хөтөлбөр 2018 оны 4 сараас хэрэгжиж  эхлээд байна.
-
-          Хөтөлбөрт хамрагдах хүсэлтэй бол Хавдар судлалын үндэсний төвийн Нийгмийн ажилтанд (Я.Ариунболор, Утас:8903 3282, Ажлын цагаар холбогдоно уу, Ажлын цаг: 08:30-17:30) бүртгүүлнэ үү."
-          link="project3"
-        />
-        <Project
-          title="Бясалгалын хичээл"
-          image="projects/project4.jpg"
-          content="Хавдартай өвчтөнүүд, тэдгээрийн асран хамгаалагч нарт зориулсан бясалгалын хичээл.
-
-          Их Хөлгөний уламжлалыг хадгалах сантай хамтран 2016 оны 1-р сарын 13-ны өдрөөс эхлэн Лхагва гараг бүрт үнэгүй зохион байгуулагдана."
-          link="project4"
-        />
-      </div>
-    </div>
     <div class="flex-col mt-8 bg-gray-200 text-center rounded-lg">
       <span class="text-3xl">Бидний хамтрагчид</span>
       <div class="flex flex-wrap space-x-8 space-y-4 mt-4 items-center justify-center">
@@ -68,11 +31,9 @@
 
 <script>
 import aboutUs from '~/static/content/aboutUs.md'
-import Project from '~/components/Project.vue'
 import Partner from '~/components/Partner.vue'
 export default {
   components: {
-    Project,
     Partner
   },
   computed: {

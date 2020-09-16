@@ -6,7 +6,7 @@
         <svg v-if="showSubMenu === true" class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
         <svg v-else class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" /></svg>
         <nuxt-link v-if="mcMenu.dropmenu === undefined" :to="mcMenu.link">
-          <div v-html="mcMenu.title" class="ml-1" />
+          <div @click="onsubmenu" v-html="mcMenu.title" class="ml-1" />
         </nuxt-link>
         <div v-else v-html="mcMenu.title" class="ml-1 " />
       </div>
@@ -15,11 +15,12 @@
           v-for="m in mcMenu.dropmenu"
           :key="m.title"
           class="flex flex-col bg-ccm-yellow text-white pl-8 ml-1 pb-2 hover:text-gray-500"
-          @click="onsubmenu"
         >
-          <nuxt-link v-if="m.dropmenu === undefined" :to="m.link">
-            {{ m.title }}
-          </nuxt-link>
+          <div v-if="m.dropmenu === undefined" @click="onsubmenu">
+            <nuxt-link :to="m.link">
+              {{ m.title }}
+            </nuxt-link>
+          </div>
           <template v-else>
             <div class="flex items-center">
               <svg class="h-4 w-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 4h20v2H0V7zm0 4h20v2H0v-2zm0 4h20v2H0v-2z" /></svg>
@@ -30,14 +31,11 @@
                 v-for="mnu in m.dropmenu"
                 :key="mnu.title"
                 class="flex-none bg-ccm-yellow text-white py-1 hover:text-gray-500"
-                @click="onsubmenu"
               >
-
                 <div @click="onsubmenu">
-                <nuxt-link :to="mnu.link">
-                  {{ mnu.title }}
-                </nuxt-link>
-
+                  <nuxt-link :to="mnu.link">
+                    {{ mnu.title }}
+                  </nuxt-link>
                 </div>
               </li>
             </ul>
