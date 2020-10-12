@@ -1,6 +1,23 @@
 <template>
   <div class="container">
-    <div v-html="pageContent" class="mx-4" />
+    <div class="mx-4 pt-4 my-4">
+      <span class="text-3xl uppercase">Урлагийн сэтгэл заслын хөтөлбөр</span>
+    </div>
+    <div class="flex flex-wrap md:flex-no-wrap">
+      <div v-html="pageContent" class="mx-4 md:w-1/2" />
+      <div class="flex flex-col mx-4 md:w-1/2">
+        <div class="pt-4">
+          <div class="bg-gray-100 border rounded-lg overflow-hidden">
+            <img class="w-full object-cover" src="img/Art therapy.jpg">
+          </div>
+        </div>
+        <div class="pt-4">
+          <div class="bg-gray-100 border rounded-lg overflow-hidden">
+            <img class="w-full object-cover" src="img/Art therapy 2.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
