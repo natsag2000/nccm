@@ -16,7 +16,6 @@
             <img class="w-full object-cover" src="img/havdar_gej_yu_ve2.jpg">
           </div>
         </div>
-
       </div>
     </div>
   </div>

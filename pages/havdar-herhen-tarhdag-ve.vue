@@ -1,6 +1,18 @@
 <template>
   <div class="container">
-    <div v-html="pageContent" class="mx-4" />
+    <div class="mx-4 pt-4 my-4">
+      <span class="text-3xl uppercase">Хавдар хэрхэн тархдаг вэ?</span>
+    </div>
+    <div class="flex flex-wrap md:flex-no-wrap">
+      <div v-html="pageContent" class="mx-4 md:w-1/2" />
+      <div class="flex flex-col md:w-1/2">
+        <div class="pt-4">
+          <div class="bg-gray-100 border rounded-lg overflow-hidden">
+            <img class="w-full object-cover" src="img/havdar_herhen_tarhdag_ve.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
