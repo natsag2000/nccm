@@ -1,7 +1,7 @@
 <template>
   <div class="container page">
-<div class="mx-4 pt-4 my-4">
-  <span class="text-3xl uppercase">Хавдар үүсгэгч бодисууд</span>
+    <div class="mx-4 pt-4 my-4">
+      <span class="text-3xl uppercase">Хавдар үүсгэгч бодисууд</span>
     </div>
     <div class="flex flex-wrap md:flex-no-wrap">
       <div v-html="pageContent" class="mx-4 md:w-1/2" />
