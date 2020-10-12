@@ -4,7 +4,7 @@
       <span class="text-3xl uppercase">Гүйцэтгэх захирлын мэндчилгээ</span>
     </div>
     <div class="flex flex-wrap md:flex-no-wrap">
-      <div class="pt-4">
+      <div class="pt-4 mx-4">
         <div class="bg-gray-100 border rounded-lg overflow-hidden">
           <img class="w-full object-cover" src="img/tsetsegsaikhan_photo.jpg">
           <div class="p-2 flex flex-col items-end">

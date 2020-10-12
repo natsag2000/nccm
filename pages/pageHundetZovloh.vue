@@ -4,7 +4,7 @@
       <span class="text-3xl uppercase">Хүндэт зөвлөх</span>
     </div>
     <div class="flex flex-wrap md:flex-no-wrap">
-      <div class="pt-4 md:w-1/3">
+      <div class="pt-4 mx-4 md:w-1/3">
         <div class="bg-gray-100 border rounded-lg overflow-hidden">
           <img class="w-full object-cover" src="img/hundet_zovloh.jpeg">
           <div class="p-2 flex flex-col items-end">
