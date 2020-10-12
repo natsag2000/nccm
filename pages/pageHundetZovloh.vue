@@ -15,7 +15,6 @@
       </div>
       <div v-html="pageContent" class="mx-4 md:w-2/3" />
     </div>
-
   </div>
 </template>
 
