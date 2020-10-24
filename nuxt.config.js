@@ -46,8 +46,14 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/markdownit',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/toast'
   ],
+
+  toast: {
+    position: 'top-center'
+  },
+
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
