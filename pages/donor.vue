@@ -14,7 +14,7 @@
       <!-- online donor -->
       <div class="flex bg-gray-100 mx-4">
         <div class="">
-          <form class="bg-white shadow-md border rounded pb-8 mb-2">
+          <div class="bg-white shadow-md border rounded pb-8 mb-2">
             <div class="text-center font-bold text-base py-4">
               <span>Онлайн хандивлах</span>
             </div>
@@ -77,7 +77,7 @@
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="other">
                   Бусад
                 </label>
-                <input id="other" v-model="donorValueOther" class="shadow appearance-none border border-blue-400 rounded py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline w-48" type="text">
+                <input id="other" v-model="donorValueOther" class="shadow appearance-none border border-blue-400 rounded py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline w-48" type="number">
               </div>
               <div class="flex flex-col mx-3">
                 <label class="block tracking-wide text-gray-700 text-sm font-bold mb-2" for="grid-state">
@@ -98,13 +98,12 @@
                 </div>
               </div>
             </div>
-
             <div class="flex justify-center mt-4">
               <button @click="checkoutDonor" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                Хандивлах/Donate
+                Хандивлах / Donate
               </button>
             </div>
-          </form>
+          </div>
           <p class="text-center text-gray-500 text-xs">
             &copy;2020 Hi-Pay powered.
           </p>
@@ -130,10 +129,10 @@ export default {
     }
   },
   methods: {
+    countchar (e) {
+      console.log(e)
+    },
     checkoutDonor () {
-      console.log(this.donorValue)
-      console.log(this.donorValueOther)
-      console.log(this.currency)
       if (this.donorValue === 0 && this.donorValueOther === '') {
         this.$toast.error('Хандивын тоон хэмжээг сонгоно уу').goAway(1500)
       } else if (this.donorValue > 0 && this.donorValueOther === '') {

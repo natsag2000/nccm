@@ -59,6 +59,17 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    common: {
+      // 'Authorization': 'Bearer TzUwM09oWGVkaVlaQjlQRg' // TEST
+      'Authorization': 'Bearer ZDdVY2pGanYyc0ZiZnhMYg' // PROD
+    },
+    proxy: true,
+    proxyHeaders: true
+  },
+
+  proxy: {
+//    '/api/': { target: 'https://test.hipay.mn/checkout/', pathRewrite: { '^/api/': '' } } // TEST
+    '/api/': { target: 'https://sts.hipay.mn/checkout/', pathRewrite: { '^/api/': '' } } // PROD
   },
   /**
   ** Markdownit
