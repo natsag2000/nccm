@@ -57,8 +57,8 @@ export default {
     }
   },
   async asyncData ({ $axios, params }) {
-    const PROD = true
-    const apiUrl = PROD ? '/hipay.php' : '/api/'
+    // const apiUrl = '/api/' // TEST
+    const apiUrl = 'hipay.php' // PROD
     const config = {
       method: 'GET',
       url: apiUrl,
