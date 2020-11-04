@@ -3,16 +3,16 @@
     <!-- If Donation ready -->
     <div v-if="donationReady" class="flex bg-gray-100 justify-center">
       <div class="mt-4">
-        <form class="bg-white shadow-md border rounded p-8 mb-2" method="post" :action="actionUrl">
+        <form :action="actionUrl" class="bg-white shadow-md border rounded p-8 mb-2" method="post">
           <div class="text-center font-bold text-base mb-4">
             <span>Онлайн хандивлах</span>
           </div>
           <div class="text-2xl text-center">
             <span>{{ this.$route.params.donorValue }} {{ this.$route.params.currency }}</span>
           </div>
-          <input type="hidden" name="checkoutId" :value="checkoutId">
-          <input type="hidden" name="shopperResultUrl" :value="thankyouUrl">
-          <input type="hidden" name="shopperCancelUrl" :value="cancelUrl">
+          <input :value="checkoutId" type="hidden" name="checkoutId">
+          <input :value="thankyouUrl" type="hidden" name="shopperResultUrl">
+          <input :value="cancelUrl" type="hidden" name="shopperCancelUrl">
           <div class="flex justify-center mt-4">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
               Хандивлах / Donate
@@ -36,7 +36,7 @@
 
 export default {
   data () {
-    const PROD = true
+    const PROD = false
     if (PROD) {
       return {
         actionUrl: 'https://sts.hipay.mn/payment',
@@ -51,37 +51,26 @@ export default {
       }
     }
   },
-  async asyncData ({ $axios, params }) {
-    var FormData = require('form-data')
-    const apiUrl = '/api/'
-    const token = 'ZDdVY2pGanYyc0ZiZnhMYg' // PROD
-    const entityId = 'cancerco' // PROD
-    // const token = 'TzUwM09oWGVkaVlaQjlQRg' // TEST
-    // const entityId = 'cancer' //TEST
-    const formData = new FormData()
-    formData.append('entityId', entityId)
-    formData.append('amount', params.donorValue)
-    formData.append('currency', params.currency)
-
-    const config = {
-      method: 'post',
-      url: apiUrl,
-      headers: {
-        'Authorization': `Bearer ${token}`,
-      },
-      data: formData
-    }
-    const { data } = await $axios(config)
-    return data
-  },
   computed: {
     donationReady () {
-      return this.code === 1 ? true : false
+      return this.code === 1
     }
+  },
+  async asyncData ({ $axios, params }) {
+    const apiUrl = '/api/'
+    const config = {
+      method: 'GET',
+      url: apiUrl,
+      data: {
+        'amount': params.donorValue,
+        'currency': params.currency
+      }
+    }
+    const { data } = await $axios.get(apiUrl, { params: config.data })
+    return data
   }
 }
 </script>
-
 <style>
   .container {
     @apply min-h-screen flex mx-auto;

@@ -61,15 +61,15 @@ export default {
   axios: {
     common: {
       // 'Authorization': 'Bearer TzUwM09oWGVkaVlaQjlQRg' // TEST
-      'Authorization': 'Bearer ZDdVY2pGanYyc0ZiZnhMYg' // PROD
+      // 'Authorization': 'Bearer ZDdVY2pGanYyc0ZiZnhMYg' // PROD
     },
     proxy: true,
     proxyHeaders: true
   },
 
   proxy: {
-//    '/api/': { target: 'https://test.hipay.mn/checkout/', pathRewrite: { '^/api/': '' } } // TEST
-    '/api/': { target: 'https://sts.hipay.mn/checkout/', pathRewrite: { '^/api/': '' } } // PROD
+    '/api/': { target: 'http://cancercouncilmongolia.mn/hipay.php', pathRewrite: { '^/api/': '' } } // TEST
+    //   '/api/': { target: 'https://sts.hipay.mn/checkout/', pathRewrite: { '^/api/': '' } } // PROD
   },
   /**
   ** Markdownit
