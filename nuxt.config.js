@@ -68,8 +68,7 @@ export default {
   },
 
   proxy: {
-    '/api/': { target: 'http://cancercouncilmongolia.mn/hipay.php', pathRewrite: { '^/api/': '' } } // TEST
-    //   '/api/': { target: 'https://sts.hipay.mn/checkout/', pathRewrite: { '^/api/': '' } } // PROD
+    '/api/': { target: 'http://cancercouncilmongolia.mn/hipay.php', pathRewrite: { '^/api/': '' } }
   },
   /**
   ** Markdownit
