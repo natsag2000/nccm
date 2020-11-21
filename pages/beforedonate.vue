@@ -31,7 +31,7 @@
 
 export default {
   data () {
-    const PROD = false
+    const PROD = true
     if (PROD) {
       return {
         actionUrl: 'https://sts.hipay.mn/payment',
