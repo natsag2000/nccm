@@ -36,7 +36,7 @@
 
 export default {
   data () {
-    const PROD = true
+    const PROD = false
     if (PROD) {
       return {
         actionUrl: 'https://sts.hipay.mn/payment',
@@ -57,8 +57,8 @@ export default {
     }
   },
   async asyncData ({ $axios, params }) {
-    // const apiUrl = '/api/' // TEST
-    const apiUrl = 'hipay.php' // PROD
+    const PROD = false
+    const apiUrl = PROD ? 'hipay.php' : '/api/'
     const config = {
       method: 'GET',
       url: apiUrl,

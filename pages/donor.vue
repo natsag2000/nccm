@@ -136,9 +136,9 @@ export default {
       if (this.donorValue === 0 && this.donorValueOther === '') {
         this.$toast.error('Хандивын тоон хэмжээг сонгоно уу').goAway(1500)
       } else if (this.donorValue > 0 && this.donorValueOther === '') {
-        this.$router.push({ name: 'hipaydonor', params: { donorValue: this.donorValue, currency: 'MNT' } })
+        this.$router.push({ name: 'beforedonate', params: { donorValue: this.donorValue, currency: 'MNT' } })
       } else if (this.donorValueOther !== '') {
-        this.$router.push({ name: 'hipaydonor', params: { donorValue: this.donorValueOther, currency: this.currency } })
+        this.$router.push({ name: 'beforedonate', params: { donorValue: this.donorValueOther, currency: this.currency } })
       }
     }
   }
