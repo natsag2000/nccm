@@ -2,9 +2,11 @@
 if(filter_has_var(INPUT_POST, 'amount')) {
   $amount = filter_input(INPUT_POST,'amount',FILTER_SANITIZE_NUMBER_INT);
   $currency = filter_input(INPUT_POST,'currency',FILTER_SANITIZE_STRING);
+  $msg = filter_input(INPUT_POST,'msg',FILTER_SANITIZE_STRING);
 } else {
   $amount = filter_input(INPUT_GET,'amount',FILTER_SANITIZE_NUMBER_INT);
   $currency = filter_input(INPUT_GET,'currency',FILTER_SANITIZE_STRING);
+  $msg= filter_input(INPUT_GET,'msg',FILTER_SANITIZE_STRING);
 }
 
 function request($amount,$currency) {
@@ -18,7 +20,8 @@ function request($amount,$currency) {
   $token = 'ZDdVY2pGanYyc0ZiZnhMYg';
   $data = 'entityId='.$orgId
         .'&amount='.number_format($amount,2,'.','')
-        .'&currency='.$currency;
+        .'&currency='.$currency
+        .'&item[0][name]='.$msg;
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $url);
   curl_setopt($ch, CURLOPT_HTTPHEADER, array(

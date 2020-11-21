@@ -152,7 +152,16 @@
   },
   "menu6": {
     "title": "Хандив<br/>Donor",
-    "link": "/donor"
+    "dropmenu": [
+      {
+        "title": "Хандивлах/Donate",
+        "link": "/donor"
+      },
+      {
+        "title": "Хандив зарцуулалт",
+        "link": "donation-status"
+      }
+    ]
   },
   "menu7": {
     "title": "Дэмжлэг<br/>үзүүлэх",

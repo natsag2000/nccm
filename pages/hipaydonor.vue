@@ -36,7 +36,7 @@
 
 export default {
   data () {
-    const PROD = false
+    const PROD = true // AHXAAP
     if (PROD) {
       return {
         actionUrl: 'https://sts.hipay.mn/payment',
@@ -57,14 +57,15 @@ export default {
     }
   },
   async asyncData ({ $axios, params }) {
-    const PROD = false
+    const PROD = true // AHXAAP
     const apiUrl = PROD ? 'hipay.php' : '/api/'
     const config = {
       method: 'GET',
       url: apiUrl,
       data: {
         'amount': params.donorValue,
-        'currency': params.currency
+        'currency': params.currency,
+        'msg': params.msg
       }
     }
     const { data } = await $axios.get(apiUrl, { params: config.data })

@@ -68,7 +68,8 @@ export default {
   },
 
   proxy: {
-    '/api/': { target: 'http://cancercouncilmongolia.mn/hipay.php', pathRewrite: { '^/api/': '' } }
+    '/api/': { target: 'http://cancercouncilmongolia.mn/hipay.php', pathRewrite: { '^/api/': '' } },
+    '/v1/': { target: 'http://cancercouncilmongolia.mn/checkdonate.php', pathRewrite: { '^/v1/': '' } }
   },
   /**
   ** Markdownit
@@ -79,7 +80,8 @@ export default {
     linkify: true,
     use: [
       'markdown-it-div',
-      'markdown-it-attrs'
+      'markdown-it-attrs',
+      'markdown-it-multimd-table'
     ]
   },
   /*
