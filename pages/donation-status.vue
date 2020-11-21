@@ -5,11 +5,22 @@
 </template>
 
 <script>
-import mdContent from '~/static/content/donation-status.md'
+// import mdContent from '~/static/content/donation-status.md'
+
 export default {
   computed: {
     pageContent () {
-      return mdContent
+      return this.mdContent
+    }
+  },
+  async asyncData ({ $axios }) {
+    const url = 'https://raw.githubusercontent.com/natsag2000/nccm/master/static/content/donation-status.md'
+    // const url = '/v2/'
+    const md = require('markdown-it')()
+      .use(require('markdown-it-multimd-table'))
+    const { data } = await $axios.get(url)
+    return {
+      mdContent: md.render(data)
     }
   }
 }
