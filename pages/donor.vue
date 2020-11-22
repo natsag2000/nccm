@@ -129,9 +129,6 @@ export default {
     }
   },
   methods: {
-    countchar (e) {
-      console.log(e)
-    },
     checkoutDonor () {
       if (this.donorValue === 0 && this.donorValueOther === '') {
         this.$toast.error('Хандивын тоон хэмжээг сонгоно уу').goAway(1500)

@@ -60,8 +60,6 @@ export default {
   */
   axios: {
     common: {
-      // 'Authorization': 'Bearer TzUwM09oWGVkaVlaQjlQRg' // TEST
-      // 'Authorization': 'Bearer ZDdVY2pGanYyc0ZiZnhMYg' // PROD
     },
     proxy: true,
     proxyHeaders: true

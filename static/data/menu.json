@@ -158,8 +158,12 @@
         "link": "/donor"
       },
       {
-        "title": "Хандив зарцуулалт",
-        "link": "donation-status"
+        "title": "Таны хандив",
+        "link": "tanii-handiv"
+      },
+      {
+        "title": "Зардал зарцуулалт",
+        "link": "zardal-zartsuulalt"
       }
     ]
   },
