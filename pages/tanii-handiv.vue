@@ -14,6 +14,7 @@ export default {
   },
   async asyncData ({ $axios }) {
     const url = 'https://raw.githubusercontent.com/natsag2000/nccm/master/static/content/tanii-handiv.md'
+    // const url = '/v3/'
     const md = require('markdown-it')()
       .use(require('markdown-it-multimd-table'))
     const { data } = await $axios.get(url)
@@ -32,5 +33,9 @@ export default {
   .page ul {
     list-style-type: circle;
     list-style-position: inside;
+  }
+
+  .td {
+    @apply ml-2
   }
 </style>
