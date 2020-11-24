@@ -1,6 +1,6 @@
 
 export default {
-  target: 'static',
+  ssr: false,
   /*
   ** Headers of the page
   */
@@ -68,7 +68,7 @@ export default {
   proxy: {
     '/api/': { target: 'http://cancercouncilmongolia.mn/hipay.php', pathRewrite: { '^/api/': '' } },
     '/v1/': { target: 'http://cancercouncilmongolia.mn/checkdonate.php', pathRewrite: { '^/v1/': '' } },
-    '/v2/': { target: 'https://raw.githubusercontent.com/natsag2000/nccm/master/static/content/donation-status.md', pathRewrite: { '^/v2/': '' } }
+    '/v2/': { target: 'https://raw.githubusercontent.com/natsag2000/nccm/master/static/content/zardal-zartsuulalt.md', pathRewrite: { '^/v2/': '' } }
 
   },
   /**
