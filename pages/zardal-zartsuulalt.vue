@@ -13,8 +13,7 @@ export default {
     }
   },
   async asyncData ({ $axios }) {
-    // const url = 'https://raw.githubusercontent.com/natsag2000/nccm/master/static/content/zardal-zartsuulalt.md'
-    const url = '/v2/'
+    const url = 'https://raw.githubusercontent.com/natsag2000/nccm/master/static/content/zardal-zartsuulalt.md'
     const md = require('markdown-it')()
       .use(require('markdown-it-multimd-table'))
     const { data } = await $axios.get(url)
