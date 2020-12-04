@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/content": "^0.3.0",
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@nuxtjs/toast": "^3.3.1",

@@ -47,7 +47,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
-    '@nuxtjs/toast'
+    '@nuxtjs/toast',
+    '@nuxtjs/content',
   ],
 
   toast: {

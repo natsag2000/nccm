@@ -1,26 +1,64 @@
 <template>
   <div class="container page">
-    <div v-html="pageContent" class="mx-4" />
+    <div class="flex text-3xl justify-center">Зардал</div>
+    <div class="flex justify-center bg-ccm-blue-300 my-4">
+      <button v-for="y in years" class="rounded bg-ccm-blue text-gray-100 p-2 hover:bg-blue-700">
+        {{y.year}}
+      </button>
+    </div>
+    <div class="flex justify-center">
+      <input class="border rounded" type="search" v-model="q" @input="$fetch"/>
+    </div>
+    <div class="flex justify-center">
+      <div v-for="zz in zardal" class="flex flex-col mt-2">
+        <div class="p-1 bg-blue-400 rounded">
+          {{zz.year}} он
+        </div>
+        <div v-for="mm in zz.months" class="mx-4">
+          <div class="mt-2 bg-blue-300 p-1">{{mm.month}} сар</div>
+          <table class="table-auto border rounded">
+            <thead>
+              <tr class="border bg-gray-200">
+                <th class="border p-1">Огноо</th>
+                <th class="border p-1">Хүлээн авагчийн данс</th>
+                <th class="border p-1">Зардлын дүн</th>
+                <th class="border p-1">Зориулалт</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="dd in mm.days">
+                <td class="border p-1"> {{dd.day}} </td>
+                <td class="border p-1"> {{dd.name}} </td>
+                <td class="border p-1"> {{dd.count}} </td>
+                <td class="border p-1"> {{dd.desc}} </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <pre class="hidden">{{ zardal }}</pre>
   </div>
 </template>
 
 <script>
 
 export default {
-  computed: {
-    pageContent () {
-      return this.mdContent
+  data () {
+    return {
+      years: [],
+      zardal: []
     }
   },
-  async asyncData ({ $axios }) {
-    const url = 'https://raw.githubusercontent.com/natsag2000/nccm/master/static/content/zardal-zartsuulalt.md'
-    // const url = '/v2/'
-    const md = require('markdown-it')()
-      .use(require('markdown-it-multimd-table'))
-    const { data } = await $axios.get(url)
-    return {
-      mdContent: md.render(data)
-    }
+  async fetch () {
+    this.zardal = await this.$content('zardals')
+                            .only(['year', 'months', 'days'])
+                            .fetch()
+    this.years = await this.$content('zardals')
+                            .only(['year'])
+                            .fetch()
+
   }
 }
 </script>
@@ -28,10 +66,5 @@ export default {
 <style>
   .container {
     @apply min-h-screen flex flex-col mx-auto;
-  }
-
-  .page ul {
-    list-style-type: circle;
-    list-style-position: inside;
   }
 </style>
