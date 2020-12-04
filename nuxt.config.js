@@ -51,6 +51,10 @@ export default {
     '@nuxtjs/content',
   ],
 
+  content: {
+    fullTextSearchFields: ['year', 'month', 'days', 'day', 'name', 'count', 'desc']
+  },
+
   toast: {
     position: 'top-center'
   },

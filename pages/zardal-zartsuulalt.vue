@@ -2,14 +2,11 @@
   <div class="container page">
     <div class="flex text-3xl justify-center">Зардал</div>
     <div class="flex justify-center bg-ccm-blue-300 my-4">
-      <button v-for="y in years" class="rounded bg-ccm-blue text-gray-100 p-2 hover:bg-blue-700">
+      <button v-for="y in years" @click="load_year( y.year )" class="rounded bg-ccm-blue text-gray-100 p-2 hover:bg-blue-700 mx-2">
         {{y.year}}
       </button>
     </div>
-    <div class="flex justify-center">
-      <input class="border rounded" type="search" v-model="q" @input="$fetch"/>
-    </div>
-    <div class="flex justify-center">
+    <div class="flex items-center flex-col">
       <div v-for="zz in zardal" class="flex flex-col mt-2">
         <div class="p-1 bg-blue-400 rounded">
           {{zz.year}} он
@@ -53,13 +50,24 @@ export default {
   },
   async fetch () {
     this.zardal = await this.$content('zardals')
-                            .only(['year', 'months', 'days'])
+                            .only(['year', 'months'])
+                            .sortBy('year')
                             .fetch()
     this.years = await this.$content('zardals')
-                            .only(['year'])
-                            .fetch()
+                             .only(['year'])
+                             .fetch()
+  },
 
+  methods: {
+    async load_year (year) {
+      const z = await this.$content('zardals/'+year)
+                              .only(['year', 'months'])
+                              .fetch()
+
+      this.zardal = [ z ]
+    }
   }
+
 }
 </script>
 
