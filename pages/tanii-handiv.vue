@@ -13,7 +13,7 @@
         </div>
         <div v-for="mm in zz.months" class="mx-4">
           <div class="mt-2 bg-blue-300 p-1">{{mm.month}} сар</div>
-          <table class="table-auto border rounded">
+          <table class="table-auto border rounded w-full">
             <thead>
               <tr class="border bg-gray-200">
                 <th class="border p-1">Огноо</th>
