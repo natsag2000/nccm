@@ -1,5 +1,11 @@
 <template>
   <div class="container">
+    <br/>
+    <div class="flex justify-center">
+      <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100008502519081%2Fvideos%2F1199334340853015%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true">
+      </iframe>
+
+    </div>
     <div v-html="aboutUs" class="mx-4" />
     <div class="flex-col mt-8 bg-gray-200 text-center rounded-lg">
       <span class="text-3xl">Бидний хамтрагчид</span>
@@ -32,6 +38,7 @@
 <script>
 import aboutUs from '~/static/content/aboutUs.md'
 import Partner from '~/components/Partner.vue'
+
 export default {
   components: {
     Partner

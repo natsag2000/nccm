@@ -4,6 +4,12 @@
       Электрон ном
     </p>
     <div class="flex space-x-8">
+      <a href="books/Understanding_cancer_final2222.pdf" target="_blank">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <img class="h-64 w-full object-cover" src="~/static/books/Understand_cancer.png">
+        </div>
+      </a>
+
       <a href="books/Hamtdaa-davan-tuulan-ni.pdf" target="_blank">
         <div class="border rounded-lg overflow-hidden shadow-lg">
           <img class="h-64 w-full object-cover" src="~/static/books/hamtdaa.png">
@@ -39,6 +45,12 @@
       Гарын авлага, танилцуулгууд
     </p>
     <div class="flex space-x-8">
+      <a href="gariin-avlaga/Ageing_and_cancer_policy_brief_Mongolia.pdf" target="_blank">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/Ageing_and_cancer.png">
+        </div>
+      </a>
+
       <a href="gariin-avlaga/Breast-cancer-exercise.pdf" target="_blank">
         <div class="border rounded-lg overflow-hidden shadow-lg">
           <img class="h-64 w-full object-cover" src="~/static/gariin-avlaga/dasgal1.png">
