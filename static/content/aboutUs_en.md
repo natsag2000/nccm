@@ -6,7 +6,7 @@ The aim of our organization is â€œTogether towards leaving cancer in a historyâ€
 
 We work in 2 main directions:
 
-+ __-  To assist cancer patients, their carers through targeted programs __
++ __-  To assist cancer patients, their carers through targeted programs__
 + __-  To provide information about cancer prevention and educate community of healthy lifestyle, conduct researches on cancer risks, causes and advocate for the evidence based decisions__
 
 The Board Member of our organization has extensive 10-30 years experience in health sector, hold doctors degree in health, chemistry and biology. We have 50 volunteers supporting us.
